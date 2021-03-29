@@ -3,7 +3,7 @@ class SessionsController < ApplicationController
  end
 
   def create
-    binding.pry
+    
         if params[:name].nil? || params[:name].empty?
          # byebug
          redirect_to :login
