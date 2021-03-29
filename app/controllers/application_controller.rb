@@ -5,7 +5,8 @@ class ApplicationController < ActionController::Base
 
   def hello
     if session[:name].nil? || session[:name].empty?
-      redirect_to controller: 'sessions', action: 'new'
+      # redirect_to controller: 'sessions', action: 'new'
+      redirect_to :login
     end
   end
 
